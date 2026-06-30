@@ -1,6 +1,6 @@
 ---
 title: I. Blog created
-date: 2026-06-31
+date: 2026-06-30
 summary: Now I can write here
 ---
 
