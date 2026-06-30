@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ii. A Test — Somogenhtor</title>
+  <style>
+:root {
+  --bg:      #fafaf8;
+  --text:    #1c1c1c;
+  --muted:   #888;
+  --accent:  #2a5caa;
+  --border:  #e2e2df;
+  --max:     680px;
+  --mono:    "JetBrains Mono", "Fira Code", monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.1rem;
+  line-height: 1.75;
+  margin: 0;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.wrap { max-width: var(--max); margin: 0 auto; }
+
+/* ── Header ── */
+header {
+  border-bottom: 2px solid var(--text);
+  padding-bottom: .75rem;
+  margin-bottom: 2.5rem;
+}
+header a { text-decoration: none; color: inherit; }
+header h1 { margin: 0; font-size: 1.4rem; font-family: system-ui, sans-serif; letter-spacing: -.02em; }
+header p  { margin: .15rem 0 0; font-size: .85rem; color: var(--muted); font-family: system-ui, sans-serif; }
+
+/* ── Post list (index) ── */
+.post-list { list-style: none; padding: 0; margin: 0; }
+.post-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+  padding: .65rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.post-list time { font-size: .82rem; color: var(--muted); white-space: nowrap; font-family: system-ui, sans-serif; }
+.post-list a { color: var(--accent); text-decoration: none; font-family: system-ui, sans-serif; }
+.post-list a:hover { text-decoration: underline; }
+.post-list .summary { font-size: .9rem; color: var(--muted); margin-top: .2rem; font-family: system-ui, sans-serif; }
+
+/* ── Post page ── */
+article h1 { font-size: 2rem; margin: 0 0 .3rem; line-height: 1.2; }
+.post-meta  { font-size: .85rem; color: var(--muted); margin-bottom: 2.2rem; font-family: system-ui, sans-serif; }
+article h2, article h3 { font-family: system-ui, sans-serif; }
+article a   { color: var(--accent); }
+article pre {
+  background: #f0efe9;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1rem;
+  overflow-x: auto;
+  font-family: var(--mono);
+  font-size: .88rem;
+  line-height: 1.55;
+}
+article code { font-family: var(--mono); font-size: .9em; background: #f0efe9; padding: .1em .3em; border-radius: 3px; }
+article pre code { background: none; padding: 0; }
+article blockquote {
+  margin: 1.5rem 0;
+  padding: .75rem 1.25rem;
+  border-left: 3px solid var(--accent);
+  color: var(--muted);
+}
+article img { max-width: 100%; border-radius: 4px; }
+article table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+article th, article td { border: 1px solid var(--border); padding: .45rem .75rem; text-align: left; }
+article th { background: #f0efe9; }
+
+.back { display: inline-block; margin-bottom: 2rem; font-family: system-ui, sans-serif; font-size: .9rem; color: var(--accent); text-decoration: none; }
+.back:hover { text-decoration: underline; }
+
+footer { margin-top: 3rem; font-size: .82rem; color: var(--muted); font-family: system-ui, sans-serif; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1><a href="../notes.html">Somogenhtor</a></h1>
+  </header>
+  
+<a class="back" href="../notes.html">← All posts</a>
+<article>
+  <h1>Ii. A Test</h1>
+  <div class="post-meta"></div>
+  <p>Does this work now?
+Test test test</p>
+</article>
+</div>
+</body>
+</html>
