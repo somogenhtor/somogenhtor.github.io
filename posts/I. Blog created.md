@@ -1,5 +1,5 @@
 ---
-title: I (re)made this today
+title: I. Blog created
 date: 2026-06-31
 summary: Now I can write here
 ---
